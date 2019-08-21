@@ -3,7 +3,6 @@ pipeline:
     commands: 
       - "pip install coverage" #can be mentioned in requirements.txt
       - "pip install pytest" #can be mentioned in requirements.txt
-      #- "pip install -r requirements.txt"
       - "coverage run --source=example-py-pytest/com/automationpanda/example example-py-pytest/tests/test*.py"
       - "coverage xml"
     image: frolvlad/alpine-python3
