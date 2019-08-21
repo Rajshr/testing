@@ -3,8 +3,8 @@ pipeline:
     commands: 
       - "pip install coverage" #can be mentioned in requirements.txt
       - "pip install pytest"
-      - "coverage run --source=example-py-pytest/com/automationpanda/example example-py-pytest/tests/test*.py"
-      - "coverage xml"
+      #- "coverage run --source=example-py-pytest/com/automationpanda/example example-py-pytest/tests/test*.py"
+      #- "coverage xml"
     image: frolvlad/alpine-python3
   docker build push:
     image: plugins/docker
